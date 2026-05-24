@@ -6,9 +6,14 @@ const app = express();
 const API_KEY = "1234"; // API key for authentication
 
 const allowedOrigins = [
+  "https://reel-save.netlify.app",
+  "http://reel-save.netlify.app",
+  "https://reel-save.netlify.app",
+  "https://www.reel-save.netlify.app",
   "http://localhost:4000",
   "http://127.0.0.1:4000"
 ];
+
 
 app.use(
   cors({
@@ -57,5 +62,4 @@ app.get("/ping", (req, res) => {
   res.send(".");
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(3000, () => console.log("Server is running on port 3000"));
