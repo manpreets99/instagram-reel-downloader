@@ -1,0 +1,11 @@
+title: Reels Downloader - Fast & Free Instagram Reel Downloader
+email: support@reelsdownloader.online
+description: >-
+  Download Instagram Reels in high quality for free. Our fast and secure Instagram Reel Downloader allows you to save your favorite reels directly to your device.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://reeldownloader.online" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed

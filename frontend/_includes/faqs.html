@@ -1,0 +1,30 @@
+<section id="faq" class="section-padding position-relative">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold display-5 mb-3">{{ pageData.faqsTitle }}</h2>
+            <p class="text-white-50">{{ pageData.faqsSubtitle }}</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    {% for faq in pageData.faqs %}
+                    <div class="accordion-item reveal" style="transition-delay: {{ forloop.index | times: 100 }}ms">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.index }}">
+                                {{ faq.question }}
+                            </button>
+                        </h2>
+                        <div id="collapse{{ forloop.index }}" class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body fw-light">
+                                {{ faq.answer }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

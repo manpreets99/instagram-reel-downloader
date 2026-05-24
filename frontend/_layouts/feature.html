@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% assign pageData = site.data[page.folderName][page.lang][page.fileName] %}
+{% assign commonData = site.data.common %}
+{% include head/head.html %}
+
+<body>
+    {% include navbar/navbar.html %}
+
+    <main>
+        {% include hero.html %}
+        {% include features.html %}
+        {% include how-to.html %}
+        {% include faqs.html %}
+    </main>
+
+    {% include footer/footer.html %}
+    {% include scripts/scripts.html %}
+</body>
+
+</html>

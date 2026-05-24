@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top"
+    style="background: rgba(26, 26, 26, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <span class="brand-icon me-2">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#paint0_linear)" stroke-width="2" />
+                    <circle cx="12" cy="12" r="5" stroke="url(#paint0_linear)" stroke-width="2" />
+                    <circle cx="18.5" cy="5.5" r="1.5" fill="url(#paint0_linear)" />
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#f09433" />
+                            <stop offset="0.25" stop-color="#e6683c" />
+                            <stop offset="0.5" stop-color="#dc2743" />
+                            <stop offset="0.75" stop-color="#cc2366" />
+                            <stop offset="1" stop-color="#bc1888" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </span>
+            <span class="fw-bold tracking-tight">{{ commonData.navbar.brand }}<span class="text-gradient">{{
+                    commonData.navbar.brandSuffix }}</span></span>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                {% for link in commonData.navbar.links %}
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="{{ link.url }}">{{ link.text }}</a>
+                </li>
+                {% endfor %}
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                    <a class="btn btn-gradient px-4 rounded-pill fw-medium" href="/">{{ commonData.navbar.ctaText }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

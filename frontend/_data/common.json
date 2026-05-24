@@ -1,0 +1,72 @@
+{
+    "navbar": {
+        "brand": "Reels",
+        "brandSuffix": "Downloader",
+        "links": [
+            {
+                "text": "Features",
+                "url": "#features"
+            },
+            {
+                "text": "How to Use",
+                "url": "#how-to"
+            },
+            {
+                "text": "FAQs",
+                "url": "#faq"
+            }
+        ],
+        "ctaText": "Start Saving"
+    },
+    "footer": {
+        "brand": "Reels",
+        "brandSuffix": "Downloader",
+        "about": "The easiest and fastest way to download Instagram Reels in HD. No registration required, 100% free and secure.",
+        "quickLinks": {
+            "title": "Quick Links",
+            "links": [
+                {
+                    "text": "Home",
+                    "url": "/"
+                },
+                {
+                    "text": "Features",
+                    "url": "#features"
+                },
+                {
+                    "text": "How to Use",
+                    "url": "#how-to"
+                },
+                {
+                    "text": "FAQs",
+                    "url": "#faq"
+                }
+            ]
+        },
+        "company": {
+            "title": "Company",
+            "links": [
+                {
+                    "text": "Privacy Policy",
+                    "url": "/privacy"
+                },
+                {
+                    "text": "Terms of Service",
+                    "url": "/terms"
+                },
+                {
+                    "text": "Contact Us",
+                    "url": "/contact"
+                }
+            ]
+        },
+        "newsletter": {
+            "title": "Stay Updated",
+            "text": "Get the latest updates and tips on how to save Instagram content.",
+            "placeholder": "Email Address",
+            "btnText": "Subscribe"
+        },
+        "copyright": "2024 ReelsDownloader. All rights reserved.",
+        "disclaimer": "Not affiliated with Instagram or Meta Platforms, Inc."
+    }
+}

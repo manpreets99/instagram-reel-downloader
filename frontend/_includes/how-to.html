@@ -1,0 +1,31 @@
+<section id="how-to" class="section-padding position-relative overflow-hidden">
+    <!-- Subtle Gradient Ornament -->
+    <div class="position-absolute top-50 start-100 translate-middle"
+        style="width: 400px; height: 400px; background: var(--primary-gradient); filter: blur(150px); opacity: 0.1; z-index: -1;">
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 reveal">
+                <h2 class="fw-bold display-5 mb-4">{{ pageData.howTo.title }}</h2>
+                <p class="text-white-50 mb-5 fw-light">{{ pageData.howTo.subtitle }}</p>
+
+                <div class="how-to-steps">
+                    {% for step in pageData.howTo.steps %}
+                    <div class="how-to-step reveal" data-step="{{ forloop.index }}"
+                        style="transition-delay: {{ forloop.index | times: 150 }}ms">
+                        <h5 class="fw-bold mb-2">{{ step.title }}</h5>
+                        <p class="text-white-50 fw-light">{{ step.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-6 reveal" style="transition-delay: 400ms">
+                <div class="glass-card p-2 shadow-2xl rounded-5 overflow-hidden">
+                    <img src="{{ pageData.howTo.image }}" alt="Instructional Graphic"
+                        class="img-fluid rounded-4 grayscale-hover transition-all duration-500">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

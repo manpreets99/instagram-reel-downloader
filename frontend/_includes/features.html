@@ -1,0 +1,22 @@
+<section id="features" class="section-padding position-relative">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold display-5 mb-3">Why Choose <span class="text-gradient">Us?</span></h2>
+            <p class="text-white-50 max-w-600 mx-auto">Experience the most advanced Instagram downloader with premium
+                features designed for speed and quality.</p>
+        </div>
+        <div class="row g-5">
+            {% for feature in pageData.featureHighlights %}
+            <div class="col-md-4">
+                <div class="glass-card p-4 h-100 reveal" style="transition-delay: {{ forloop.index | times: 100 }}ms">
+                    <div class="feature-icon-wrapper mb-3" style="width: 50px; height: 50px;">
+                        <i class="bi {{ feature.icon }} fs-4"></i>
+                    </div>
+                    <h5 class="fw-bold mb-2 tracking-tight">{{ feature.title }}</h5>
+                    <p class="text-white-50 mb-0 fw-light small">{{ feature.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

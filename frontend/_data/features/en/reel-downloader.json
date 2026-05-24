@@ -1,0 +1,64 @@
+{
+    "Language": "English",
+    "htmlLangAtt": "en",
+    "title": "Instagram Reel Downloader - Fast & Free HD Download",
+    "meta": "Download Instagram Reels in high quality for free. Our fast and secure Instagram Reel Downloader allows you to save reels directly to your device.",
+    "h1": "Instagram Reel Downloader",
+    "h2": "Download Instagram Reels in high quality HD format. Fast, free, and no registration required.",
+    "featureHighlights": [
+        {
+            "icon": "bi-lightning-charge-fill",
+            "title": "Super Fast",
+            "description": "Our servers are optimized to provide the fastest download speeds for all your favorite reels."
+        },
+        {
+            "icon": "bi-hd-fill",
+            "title": "HD Quality",
+            "description": "Download reels in their original quality. We support high definition 1080p and 4K results."
+        },
+        {
+            "icon": "bi-shield-lock-fill",
+            "title": "Safe & Secure",
+            "description": "Your privacy is our priority. We don't store any user data or history. Purely anonymous downloading."
+        }
+    ],
+    "howTo": {
+        "title": "How to Download?",
+        "subtitle": "Follow these three simple steps to save any Instagram Reel to your device instantly.",
+        "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800",
+        "steps": [
+            {
+                "title": "Copy the URL",
+                "description": "Open the Instagram app or website, find the reel you want to download, and copy its link."
+            },
+            {
+                "title": "Paste in Input",
+                "description": "Go to ReelsDownloader.online and paste the link into the input field at the top of the page."
+            },
+            {
+                "title": "Download & Save",
+                "description": "Click the download button, wait for a few seconds, and click the final download link to save the video."
+            }
+        ]
+    },
+    "faqsTitle": "Frequently Asked Questions",
+    "faqsSubtitle": "Everything you need to know about our downloader.",
+    "faqs": [
+        {
+            "question": "Is it free to use?",
+            "answer": "Yes, ReelsDownloader is completely free to use. There are no hidden charges, subscriptions, or limits on how many reels you can download."
+        },
+        {
+            "question": "Do I need to log in to my Instagram account?",
+            "answer": "No, you don't need to log in or provide your Instagram credentials. Our tool works without needing access to your account."
+        },
+        {
+            "question": "In what quality are the videos downloaded?",
+            "answer": "All videos are downloaded in their original uploaded quality. Most Instagram Reels are available in HD (720p or 1080p)."
+        },
+        {
+            "question": "Is it legal to download Instagram Reels?",
+            "answer": "Downloading content for personal use is generally acceptable, but you should not use downloaded content for commercial purposes or re-upload it without the original creator's permission."
+        }
+    ]
+}

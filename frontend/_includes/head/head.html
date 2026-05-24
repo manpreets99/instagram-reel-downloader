@@ -1,0 +1,51 @@
+<head>
+    {% assign folder = page.folderName %}{% assign file = page.fileName %}{% assign lang = page.lang %}{% assign
+    pageData = site.data[folder][lang][file] %}{% assign title = pageData.title | default: page.title | default:
+    site.title %}
+    {% assign keywords = pageData.keywords %}{% assign favicon = site.favicon %}
+
+    {%- if page.layout == "post" -%}
+    {%- assign description = page.description | default: page.content | markdownify | strip_html | truncatewords: 50 |
+    default: page.excerpt | default: site.description -%}
+    {%- else -%}
+    {% assign description = pageData.meta | default: page.description | default: site.description %}
+    {%- endif -%}
+
+
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+
+    {%- if page.noIndex -%}
+    <meta name="robots" content="noindex, follow" />
+    {%- endif -%}
+
+    <meta name="description" content="{{description}}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%- if page.layout != "post" -%}
+    <meta name="keywords" content="{{pageData.keywords  | default: site.keywords}}" />
+    {%- endif -%}
+    <link rel="canonical" href="{{site.url | append:  page.url}}" />
+    <link rel="shortcut icon" href="{{favicon}}" />
+    <link rel="icon" href="{{site.url}}{{favicon}}">
+    <link rel="apple-touch-icon" href="{{site.url}}{{favicon}}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="{{site.name}}" />
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta property="og:image" content="{{site.url}}{{favicon}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{site.url | append:  page.url}}" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{site.name}}">
+    <meta name="twitter:creator" content="@{{site.name}}">
+    <meta name="twitter:title" content="{{title}}" />
+    <meta name="twitter:description" content="{{description}}" />
+    <meta name="twitter:image" content="{{site.url}}{{favicon}}" />
+    <link rel="manifest" href="./manifest.json">
+    {%- include /styles/styles.html -%}
+    {%- include structuredata/structuredata.html -%}
+    {%- if site.adsense -%}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1446788442687803"
+        crossorigin="anonymous"></script>
+    {%- endif -%}
+</head>

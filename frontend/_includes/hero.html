@@ -1,0 +1,70 @@
+<section class="hero-section section-padding text-center position-relative overflow-hidden">
+    <!-- Animated Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container position-relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8 reveal active">
+                <h1 class="display-2 fw-bold mb-4 tracking-tight text-white lh-1">{{ pageData.h1 }}</h1>
+                <p class="lead text-white-50 mb-100 fw-light fs-4">{{ pageData.h2 }}</p>
+
+                <div class="downloader-container mb-5 mx-auto" style="max-width: 700px;">
+                    <form id="downloadForm">
+                        <div class="input-group downloader-input-group mb-4">
+                            <input type="text" id="reelUrl" class="form-control downloader-input"
+                                placeholder="Paste Instagram Reel Link Here..." required>
+                            <button class="btn btn-gradient px-5 py-3 rounded-pill" type="submit" id="downloadBtn">
+                                <span class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-lightning-charge-fill"></i>
+                                    <span>Download</span>
+                                </span>
+                                <span class="spinner-border spinner-border-sm d-none" role="status"
+                                    aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+                    <p class="small text-white-50 opacity-50">Secure, fast & permanent downloads for all Instagram Reels
+                        & Videos.</p>
+                </div>
+
+                <div id="resultContainer" class="d-none mt-5">
+                    <div class="glass-card p-5 text-start">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <div
+                                    class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-2xl border border-white border-opacity-10">
+                                    <video id="videoPreview" controls class="w-100 h-100"></video>
+                                </div>
+                            </div>
+                            <div class="col-md-7 ps-md-5">
+                                <div class="badge bg-success bg-opacity-10 text-success mb-3 px-3 py-2 rounded-pill">
+                                    <i class="bi bi-check2-circle me-1"></i> Ready for Download
+                                </div>
+                                <h3 class="fw-bold mb-3 text-white">Your Video is Ready!</h3>
+                                <p id="reelCaption" class="text-white-50 small mb-4 fw-light">Original quality. HD
+                                    format supported.</p>
+                                <a id="downloadLink" href="#"
+                                    class="btn btn-gradient px-5 py-3 rounded-pill d-inline-flex align-items-center gap-2 transition-all hover-scale"
+                                    download>
+                                    <i class="bi bi-cloud-arrow-down-fill fs-5"></i>
+                                    <span>Save to Device</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="errorContainer" class="d-none mt-4">
+                    <div class="alert alert-danger bg-danger bg-opacity-5 text-danger border-danger border-opacity-20 rounded-4 px-4 py-3"
+                        role="alert">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="bi bi-exclamation-triangle-fill fs-4"></i>
+                            <span id="errorMessage">Please provide a valid Instagram Reel URL to proceed.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

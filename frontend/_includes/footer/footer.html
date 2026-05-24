@@ -1,0 +1,74 @@
+<footer class="footer mt-auto py-120 bg-obsidian text-white border-top border-white border-opacity-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <a class="navbar-brand d-flex align-items-center mb-4" href="/">
+                    <span class="fw-bold fs-3 tracking-tight">{{ commonData.footer.brand }}<span
+                            class="text-white-50">{{
+                            commonData.footer.brandSuffix }}</span></span>
+                </a>
+                <p class="text-white-50 mb-4 fw-light">{{ commonData.footer.about }}</p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="text-white-50 hover-white transition-all"><i class="bi bi-facebook fs-5"></i></a>
+                    <a href="#" class="text-white-50 hover-white transition-all"><i
+                            class="bi bi-twitter-x fs-5"></i></a>
+                    <a href="#" class="text-white-50 hover-white transition-all"><i
+                            class="bi bi-instagram fs-5"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <h6 class="fw-bold text-white mb-4 text-uppercase small tracking-widest">{{
+                    commonData.footer.quickLinks.title }}</h6>
+                <ul class="list-unstyled">
+                    {% for link in commonData.footer.quickLinks.links %}
+                    <li class="mb-3"><a href="{{ link.url }}"
+                            class="text-white-50 text-decoration-none hover-white transition-all fw-light">{{ link.text
+                            }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <h6 class="fw-bold text-white mb-4 text-uppercase small tracking-widest">{{
+                    commonData.footer.company.title }}</h6>
+                <ul class="list-unstyled">
+                    {% for link in commonData.footer.company.links %}
+                    <li class="mb-3"><a href="{{ link.url }}"
+                            class="text-white-50 text-decoration-none hover-white transition-all fw-light">{{ link.text
+                            }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <h6 class="fw-bold text-white mb-4 text-uppercase small tracking-widest">{{
+                    commonData.footer.newsletter.title }}</h6>
+                <p class="text-white-50 small mb-4 fw-light">{{ commonData.footer.newsletter.text }}</p>
+                <div class="input-group downloader-input-group p-1">
+                    <input type="text" class="form-control bg-transparent border-0 text-white ps-3"
+                        placeholder="{{ commonData.footer.newsletter.placeholder }}">
+                    <button class="btn btn-gradient px-4 py-2 rounded-pill border-0" type="button">{{
+                        commonData.footer.newsletter.btnText
+                        }}</button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5 border-white border-opacity-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0 text-white-50 small fw-light">&copy; {{ commonData.footer.copyright }}</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                <p class="mb-0 text-white-50 small fw-light">{{ commonData.footer.disclaimer }}</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .bg-obsidian {
+        background-color: var(--obsidian);
+    }
+
+    .py-120 {
+        padding: 120px 0;
+    }
+</style>
