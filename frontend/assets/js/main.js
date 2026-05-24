@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const reelCaption = document.getElementById('reelCaption');
     const downloadLink = document.getElementById('downloadLink');
 
-    const API_URL = 'http://localhost:3000'; // Update this to your production API URL
+    const API_URL = 'https://instagram-reel-downloader-bcwf.onrender.com'; // Update this to your production API URL
     const API_KEY = '1234'; // Must match backend
 
     downloadForm.addEventListener('submit', async (e) => {
